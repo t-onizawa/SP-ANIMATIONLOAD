@@ -6,14 +6,15 @@
 - body,a,submit,formにクラスを追加でカンタンに 
 - CSSに記述するのは.transitionだけ 
 
-## Effect
-### In Effect
+### Effect
+#### In Effect
 -  fadeIn
 -  scaleFromOver
 -  scaleFromSmall
 -  slideToLeft
 -  slideToRight
-### Out Effect
+
+#### Out Effect
 -  fadeOut
 -  scaleToOver
 -  scaleToSmall
