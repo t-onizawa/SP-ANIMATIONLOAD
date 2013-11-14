@@ -5,7 +5,7 @@
  =============================*/
 .page-animation {
 	opacity: 0;
-	box-shadow: 0 0 8px #111;
+	box-shadow: 0px -8px 8px rgba(0,0,0,.6);
 }
 .page-animation.transition {
  	-webkit-transition: all 500ms ease;
