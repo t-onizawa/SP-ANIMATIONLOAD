@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/all.css">
+</head>
+<body class="page-animation">
+<div class="wrapper">
+	<header class="header">
+		<div class="header-inner"><p>Header</p></div>
+	</header>
+	<div class="contents" id="jsi-contents">
+		<section class="contents-inner">
+			<h1 class="page-head">PAGE HEAD</h1>
+			<section class="sec">
+				<h2 class="sec-head">Section HeadLine</h2>
+				<div class="sec-inner">
+					<form action="" method="post" id="styleSelectForm" class="form">
+					<input type="text" value="Example">
+					<input type="submit" class="submit">
+					</form>
+				</div>
+			</section>
+			<section class="sec">
+				<h2 class="sec-head">Section HeadLine</h2>
+				<p class="sec-inner"><a href="//yahoo.co.jp" class="a">Hello World! This is Section's Inner. And This is Dummy Text. This is Dummy Text. This is Dummy Text. This is Dummy Text. This is Dummy Text. This is Dummy Text. This Contents is for SideBar JavaScript. </a></p>
+			</section>
+			<section class="sec">
+				<h2 class="sec-head">Section HeadLine</h2>
+				<p class="sec-inner"><a href="//yahoo.co.jp" class="a">Hello World! This is Section's Inner. And This is Dummy Text. This is Dummy Text. This is Dummy Text. This is Dummy Text. This is Dummy Text. This is Dummy Text. This Contents is for SideBar JavaScript. </a></p>
+			</section>
+			<section class="sec">
+				<h2 class="sec-head">Section HeadLine</h2>
+				<p class="sec-inner">Hello World! This is Section's Inner. And This is Dummy Text. This is Dummy Text. This is Dummy Text. This is Dummy Text. This is Dummy Text. This is Dummy Text. This Contents is for SideBar JavaScript. </p>
+			</section>
+		</section>
+	</div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="js/loadAnimation.js"></script>
+<script>
+	$(function () {
+
+		$('.page-animation').loadAnimation({
+
+			inAnimation: true,
+			// IN Effect : fadeIn', 'scaleFromOver', 'scaleFromSmall', 'slideToLeft', 'slideToRight'
+			inAnimationEffect: "slideToRight",
+
+			outAnimation: true,
+			// OUT Effect : fadeOut', 'scaleToOver', 'scaleToSmall', 'slideToLeft', 'slideToRight'
+			outAnimationEffect: "slideToLeft",
+
+			// AnimationDuration is You Set Transition's Duration on Your CSS. 
+			animationDuration: 500,
+
+			// This Name like a Css Selecter
+			submitFormClassName: ".form",
+			submitClassName: ".submit",
+			locationClassName: ".a"
+		});
+	});
+</script>
+</body>
+</html>

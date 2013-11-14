@@ -4,9 +4,9 @@
 		this.$container = $this;
 		this.$win = $(window);
 		this.winWidth = this.$win.width();
-		this.$locationTrigger =  $(options.locationName);
-		this.$submitForm = $(options.submitFormName);
-		this.$submitTrigger = $(options.submitName);
+		this.$locationTrigger =  $(options.locationClassName);
+		this.$submitForm = $(options.submitFormClassName);
+		this.$submitTrigger = $(options.submitClassName);
 		this.inAnimation = options.inAnimation;
 		this.inAnimationEffect = options.inAnimationEffect;
 		this.outAnimation = options.outAnimation;
@@ -37,7 +37,8 @@
 				});
 			}
 			
-			this.$submitTrigger.on('click', function () {
+			this.$submitTrigger.on('click', function (event) {
+				event.preventDefault();
 				self.submitClicked($(this));
 			});
 			this.$locationTrigger.on('click', function (event) {
