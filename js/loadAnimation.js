@@ -29,8 +29,8 @@
 			if (
 				this.inAnimationEffect  == 'slideFromLeft'  ||
 				this.inAnimationEffect  == 'slideFromRight' ||
-				this.outAnimationEffect == 'slideFromLeft'  ||
-				this.outAnimationStart  == 'slideFromRight'
+				this.outAnimationEffect == 'slideToLeft'  ||
+				this.outAnimationStart  == 'slideToRight'
 			) {
 				this.$win.on('load resize', function () {
 					self.sizing();
@@ -45,6 +45,7 @@
 				event.preventDefault();
 				self.locationClicked($(this));
 			});
+			
 		},
 		addContainerStyles: function () {
 			this.$container.addClass('transition');
