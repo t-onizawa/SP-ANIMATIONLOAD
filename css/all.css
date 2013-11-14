@@ -54,7 +54,7 @@ body {
  =============================*/
 .page-animation {
 	opacity: 0;
-	box-shadow: 0 0 8px #aaa;
+	box-shadow: 0 0 8px #111;
 }
 .page-animation.transition {
  	-webkit-transition: all 500ms ease;
