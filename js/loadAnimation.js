@@ -27,10 +27,10 @@
 			});
 
 			if (
-				this.inAnimationEffect  == 'slideLeft'  ||
-				this.inAnimationEffect  == 'slideRight' ||
-				this.outAnimationEffect == 'slideLeft'  ||
-				this.outAnimationStart  == 'slideRight'
+				this.inAnimationEffect  == 'slideFromLeft'  ||
+				this.inAnimationEffect  == 'slideFromRight' ||
+				this.outAnimationEffect == 'slideFromLeft'  ||
+				this.outAnimationStart  == 'slideFromRight'
 			) {
 				this.$win.on('load resize', function () {
 					self.sizing();
@@ -84,7 +84,7 @@
 					}, self.animationDuration);
 				break;
 
-				case 'slideToLeft':
+				case 'slideFromLeft':
 					this.inOpacity();
 					this.translateLeftPosition();
 					setTimeout(function () {
@@ -93,7 +93,7 @@
 					}, self.animationDuration);
 				break;
 
-				case 'slideToRight':
+				case 'slideFromRight':
 					this.inOpacity();
 					this.translateRightPosition();
 					setTimeout(function () {
